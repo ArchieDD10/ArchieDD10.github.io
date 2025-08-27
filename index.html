@@ -34,7 +34,23 @@
     justify-content: center;         /* Center the row itself */
   }
 
+  /*base icon look */
+  .icons a {
+    font-size: 32px;
+    color: #aaa;        /*gray */
+    transition: color 0.25s ease, transform 0.15s ease;
 
+  }
+
+  /* Hover lift */
+  .icons a:hover {
+    transform: translateY(-3px);
+  }
+
+  /* Brand-specific hover colors */
+  .icons a.resume:hover {color: #e74c3c}
+  .icons a.github:hover {color: #fff;} /*Github white*/
+  .icons a.email:hover {color: #c9c9c9} /* light gray */
 
 
   </style>
@@ -46,7 +62,25 @@
   
       <h2> <em> About me </em></h2>
 
-      <p>If you see this, GitHub Pages is working! 🎉</p>
+      <p>I am a senior college student at Towson University the releveant coursework that I have taken so far is Data Structures and Algorithms
+        Calculus 2, and Discrete Math🎉</p>
+
+
+      <div>
+        <a href = "assets/Archie_Deguzman_Resume.pdf" target = "_blank" class = "Resume" aria_label = "resume"> <!-- Resume-->
+          <i class = "fas fa-file-pdf"></i>
+        </a>
+        <a href = "https://github.com/ArchieDD10" target = "_blank" class = "github" aria_label = "Github"> <!-- Github-->
+          <i class = "fab fa-github"></i>
+        </a>
+        <a href = "mailto:adeguzm2@students.towson.edu" target = "_blank" class = "email" aria_label = "Email"> <!-- email-->
+          <i class = "fas fa-envelope"></i>
+        </a>
+
+
+
+
+      </div>
     </div>
 </body>
 </html>
