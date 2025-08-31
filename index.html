@@ -21,10 +21,15 @@
         justify-content: center;         /* Center horizontally */
     }
 
-  /* Center content inside this container */
-  .center {
-    text-align: center;
-  }
+    /*Stack sections vertically: center them */
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      width: min(800px, 92vw); /*Readable Width*/
+    }
 
 /* Container for the row of icons */
   .icons {
@@ -34,13 +39,7 @@
     justify-content: center;         /* Center the row itself */
   }
 
-  .header h1 {
-    margin: 0; /*Remove default spacing around name*/
-    font-size: 36px; 
-
-
-
-  }
+ 
 
   /*base icon look */
   .icons a {
@@ -58,8 +57,12 @@
   .header {
   display: flex;        /* put name + icons in one row */
   align-items: center;  /* align vertically */
-  justify-content: center; /* center row horizontally */
   gap: 20px;            /* add space between name and icons */
+}
+
+ .header h1 {
+    margin: 0; /*Remove default spacing around name*/
+    font-size: 36px; 
 }
 
 
@@ -76,35 +79,39 @@
 </head>
 
 <body>
+    <div class = "container">
+      <!-- Row 1: Name + icons-->
     <div class = "header">
       <h1>Archie Deguzman</h1>
       <div class = "icons">
-        <a href = "assets/Archie_Deguzman_Resume.pdf" target = "_blank" class = "Resume" aria_label = "resume"> <!-- Resume-->
+        <a href = "assets/Archie_Deguzman_Resume.pdf" target = "_blank" class = "resume" aria_label = "resume"> <!-- Resume-->
           <i class = "fas fa-file-pdf"></i>
         </a>
         <a href = "https://github.com/ArchieDD10" target = "_blank" class = "github" aria_label = "Github"> <!-- Github-->
           <i class = "fab fa-github"></i>
         </a>
-        <a href = "mailto:adeguzm2@students.towson.edu" target = "_blank" class = "email" aria_label = "Email"> <!-- email-->
+        <a href = "mailto:adeguzm2@students.towson.edu" class = "email" aria_label = "Email"> <!-- email-->
           <i class = "fas fa-envelope"></i>
         </a>
 
 
       </div>
-  
+    <div>
+      <!-- Row 2: about me -->
       <h2> <em> About me </em></h2>
+      <!-- Row 3: Description-->
 
       <p>I am a senior college student at Towson University the releveant coursework that I have taken so far is Data Structures and Algorithms
-        Calculus 2, and Discrete Math🎉</p>
+        Calculus 2, and Discrete Math🎉
+        </p>
 
 
-      <div>
+      
         
 
 
 
 
-      </div>
     </div>
 </body>
 </html>
