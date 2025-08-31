@@ -34,6 +34,14 @@
     justify-content: center;         /* Center the row itself */
   }
 
+  .header h1 {
+    margin: 0; /*Remove default spacing around name*/
+    font-size: 36px; 
+
+
+
+  }
+
   /*base icon look */
   .icons a {
     font-size: 64px;
@@ -48,12 +56,11 @@
   }
 
   .header {
-    display : flex; /*Layout name + icons in a row */
-    align-items: center; /* Align vertically */
-    justify-content: center /* Center wholer row */
-             
-
-  }
+  display: flex;        /* put name + icons in one row */
+  align-items: center;  /* align vertically */
+  justify-content: center; /* center row horizontally */
+  gap: 20px;            /* add space between name and icons */
+}
 
 
 
@@ -71,7 +78,7 @@
 <body>
     <div class = "header">
       <h1>Archie Deguzman</h1>
-      <div>
+      <div class = "icons">
         <a href = "assets/Archie_Deguzman_Resume.pdf" target = "_blank" class = "Resume" aria_label = "resume"> <!-- Resume-->
           <i class = "fas fa-file-pdf"></i>
         </a>
